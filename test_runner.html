@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Tests</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional: for minimal styling of results -->
+    <style>
+        body { padding: 20px; font-family: sans-serif; }
+        #testResults { max-width: 800px; margin: 0 auto; }
+        .test-suite { margin-bottom: 20px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;}
+        .test-suite h3 { margin-top: 0; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .test-case { margin-left: 20px; padding: 5px; border-left: 3px solid #eee; margin-bottom: 3px; }
+        .pass { color: green; }
+        .fail { color: red; font-weight: bold; }
+        .fail pre { white-space: pre-wrap; font-size: 0.9em; background-color: #fff0f0; padding: 5px; border-radius: 3px; }
+        .summary { margin-top: 20px; padding:10px; background-color: #eef; border: 1px solid #ccf; border-radius: 5px; }
+        .summary .pass { font-weight: bold; }
+        .summary .fail { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>E-Invoice Questionnaire Unit Tests</h1>
+    <div id="testResults"></div>
+
+    <!-- Load the main script to make functions available for testing -->
+    <script src="script.js"></script>
+    <!-- Load the test script -->
+    <script src="test.js"></script>
+</body>
+</html>

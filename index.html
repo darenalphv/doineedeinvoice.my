@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Invoice Questionnaire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="questionnaireForm">
+    <div id="progressIndicator">Step 1 / 4</div>
+
+    <!-- Step 1: Revenue -->
+    <div id="step1" class="questionnaire-step">
+      <h2>Revenue</h2>
+      <label for="annualRevenue2024">Annual Revenue 2024 (RM):</label>
+      <input type="number" id="annualRevenue2024" name="annualRevenue2024"><br><br>
+
+      <label for="annualRevenue2025">Annual Revenue 2025 (RM):</label>
+      <input type="number" id="annualRevenue2025" name="annualRevenue2025"><br><br>
+    </div>
+
+    <!-- Step 2: Business Details -->
+    <div id="step2" class="questionnaire-step" style="display:none;">
+      <h2>Business Information</h2>
+      <label for="businessCommencementYear">Business Commencement Year:</label>
+      <select id="businessCommencementYear" name="businessCommencementYear">
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+      </select><br><br>
+
+      <label for="isPreBusiness">Pre-business status:</label>
+      <input type="checkbox" id="isPreBusiness" name="isPreBusiness"><br><br>
+
+      <label for="currentYear">Current Year:</label>
+      <select id="currentYear" name="currentYear">
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+      </select><br><br>
+    </div>
+
+    <!-- Step 3: Results (Placeholder) -->
+    <div id="step3" class="questionnaire-step" style="display:none;">
+      <h2>Your E-Invoice Requirements</h2>
+      <div id="resultsDisplay"></div>
+    </div>
+
+    <!-- Step 4: Newsletter (Placeholder) -->
+    <div id="step4" class="questionnaire-step" style="display:none;">
+      <h2>Stay Updated</h2>
+      <label for="newsletterEmail">Email:</label>
+      <input type="email" id="newsletterEmail" name="newsletterEmail"><br><br>
+
+      <label for="newsletterBusinessName">Business Name (Optional):</label>
+      <input type="text" id="newsletterBusinessName" name="newsletterBusinessName"><br><br>
+
+      <label for="newsletterPhone">Phone Number (Optional):</label>
+      <input type="tel" id="newsletterPhone" name="newsletterPhone"><br><br>
+
+      <label for="marketingConsent">
+        <input type="checkbox" id="marketingConsent" name="marketingConsent"> I agree to receive marketing communications.
+      </label><br><br>
+
+      <button type="button" id="submitNewsletterButton">Subscribe</button>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div>
+      <button type="button" id="prevButton" style="display:none;">Previous</button>
+      <button type="button" id="nextButton">Next</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
